@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Analytics Dashboard</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',
+          filename='css/style.css') }}"
+    />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <!-- LOGO -->
+
+      <img
+        src="{{ url_for('static',
+         filename='images/logo.png') }}"
+        alt="Logo"
+        class="logo"
+      />
+
+      <!-- HERO BANNER -->
+
+      <img
+        src="{{ url_for('static',
+         filename='images/hero-banner.jpg') }}"
+        alt="Banner"
+        class="banner"
+      />
+
+      <br /><br />
+
+      <!-- DASHBOARD IMAGE -->
+
+      <img
+        src="{{ url_for('static',
+         filename='images/dashboard-analytics.png') }}"
+        alt="Dashboard Analytics"
+        class="dashboard-image"
+      />
+
+      <h1>AI Recruitment Analytics Dashboard</h1>
+
+      <p class="dashboard-subtitle">
+        Monitor resume screening performance, ATS statistics, candidate
+        insights, and recruitment analytics in real time.
+      </p>
+
+      <!-- DASHBOARD STATS -->
+
+      <div class="dashboard-grid">
+        <div class="stat-card">
+          <h2>Total Resumes</h2>
+
+          <h1>125</h1>
+        </div>
+
+        <div class="stat-card">
+          <h2>Average ATS Score</h2>
+
+          <h1>82%</h1>
+        </div>
+
+        <div class="stat-card">
+          <h2>Top Skill</h2>
+
+          <h1>Python</h1>
+        </div>
+
+        <div class="stat-card">
+          <h2>Recommended Jobs</h2>
+
+          <h1>340</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

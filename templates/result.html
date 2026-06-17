@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Resume Analysis Result</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <!-- Logo -->
+
+      <img
+        src="{{ url_for('static', filename='images/logo.png') }}"
+        class="logo"
+      />
+
+      <!-- Banner -->
+
+      <img
+        src="{{ url_for('static', filename='images/hero-banner.jpg') }}"
+        class="banner"
+      />
+
+      <br /><br />
+
+      <!-- Analysis Image -->
+
+      <img
+        src="{{ url_for('static', filename='images/analysis.png') }}"
+        class="analysis-image"
+      />
+
+      <h1>Resume Analysis Report</h1>
+
+      <div class="result-card">
+        <!-- ATS SCORE IMAGE SECTION -->
+
+        <div class="ats-section">
+          <img
+            src="{{ url_for('static', filename='images/ats-score.png') }}"
+            alt="ATS Score"
+            class="ats-image"
+          />
+
+          <h2>ATS Score</h2>
+
+          <h1 class="ats-value">{{ ats_score }}%</h1>
+        </div>
+
+        <!-- PREDICTED ROLE -->
+
+        <h2>Predicted Role</h2>
+
+        <p>{{ prediction }}</p>
+
+        <!-- SKILLS -->
+
+        <!-- SKILLS IMAGE -->
+
+        <img
+          src="{{ url_for('static', filename='images/skills-detected.png') }}"
+          alt="Skills Detected"
+          class="skills-image"
+        />
+
+        <h2>Skills Found</h2>
+
+        <ul>
+          {% for skill in skills %}
+
+          <li>{{ skill }}</li>
+
+          {% endfor %}
+        </ul>
+
+        <!-- JOBS -->
+
+        <!-- JOB RECOMMENDATION IMAGE -->
+
+        <img
+          src="{{ url_for('static', filename='images/job-recommendation.png') }}"
+          alt="Job Recommendation"
+          class="job-image"
+        />
+
+        <h2>Recommended Jobs</h2>
+
+        <ul>
+          {% for job in recommendations %}
+
+          <li>{{ job }}</li>
+
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

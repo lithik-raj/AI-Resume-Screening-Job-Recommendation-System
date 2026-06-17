@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, sans-serif;
+
+  background: #f4f7fb;
+}
+
+/* Main */
+
+.main-container {
+  width: 90%;
+
+  margin: auto;
+
+  text-align: center;
+}
+
+/* Logo */
+
+.logo {
+  width: 180px;
+
+  margin-top: 20px;
+}
+
+/* Banner */
+
+.banner {
+  width: 100%;
+
+  max-width: 1200px;
+
+  border-radius: 15px;
+
+  margin-top: 20px;
+
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Upload Section */
+
+.upload-container {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 50px;
+
+  padding: 50px;
+
+  margin-top: 30px;
+}
+
+.left-section {
+  flex: 1;
+}
+
+.right-section {
+  flex: 1;
+}
+
+.upload-image {
+  width: 100%;
+
+  max-width: 500px;
+}
+
+.upload-text {
+  font-size: 18px;
+
+  color: #555;
+
+  line-height: 1.6;
+}
+
+/* File Input */
+
+input[type="file"] {
+  padding: 10px;
+}
+
+/* Button */
+
+.upload-btn {
+  padding: 15px 35px;
+
+  background: #0066ff;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 10px;
+
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+.upload-btn:hover {
+  background: #004ecc;
+}
+.analysis-image {
+  width: 100%;
+
+  max-width: 500px;
+
+  margin-top: 20px;
+}
+
+.result-card {
+  background: white;
+
+  width: 80%;
+
+  margin: auto;
+
+  padding: 30px;
+
+  border-radius: 15px;
+
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+
+  text-align: left;
+}
+
+.result-card h2 {
+  color: #0066ff;
+}
+/* ATS SECTION */
+
+.ats-section {
+  text-align: center;
+
+  margin-top: 30px;
+}
+
+.ats-image {
+  width: 100%;
+
+  max-width: 650px;
+
+  margin-bottom: 20px;
+}
+
+.ats-value {
+  color: #00a651;
+
+  font-size: 50px;
+
+  margin-top: 10px;
+}
+/* JOB RECOMMENDATION IMAGE */
+
+.job-image {
+  width: 100%;
+
+  max-width: 550px;
+
+  display: block;
+
+  margin: 30px auto;
+}
+/* SKILLS IMAGE */
+
+.skills-image {
+  width: 100%;
+
+  max-width: 550px;
+
+  display: block;
+
+  margin: 30px auto;
+}
+/* DASHBOARD */
+
+.dashboard-image {
+  width: 100%;
+
+  max-width: 700px;
+
+  display: block;
+
+  margin: 30px auto;
+}
+/* DASHBOARD PAGE */
+
+.dashboard-image {
+  width: 100%;
+
+  max-width: 700px;
+
+  display: block;
+
+  margin: 30px auto;
+}
+
+.dashboard-subtitle {
+  font-size: 18px;
+
+  color: #555;
+
+  width: 80%;
+
+  margin: auto;
+
+  line-height: 1.6;
+}
+
+.dashboard-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 20px;
+
+  margin-top: 40px;
+}
+
+.stat-card {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+
+  text-align: center;
+}
+
+.stat-card h2 {
+  color: #0066ff;
+
+  margin-bottom: 10px;
+}
+
+.stat-card h1 {
+  color: #00a651;
+
+  font-size: 40px;
+}

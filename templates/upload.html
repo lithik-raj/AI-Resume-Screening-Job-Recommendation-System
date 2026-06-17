@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Upload Resume</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <!-- LOGO -->
+
+      <div class="logo-section">
+        <img
+          src="{{ url_for('static', filename='images/logo.png') }}"
+          alt="Logo"
+          class="logo"
+        />
+      </div>
+
+      <!-- HERO BANNER -->
+
+      <div class="banner-section">
+        <img
+          src="{{ url_for('static', filename='images/hero-banner.jpg') }}"
+          alt="Banner"
+          class="banner"
+        />
+      </div>
+
+      <!-- UPLOAD SECTION -->
+
+      <div class="upload-container">
+        <div class="left-section">
+          <img
+            src="{{ url_for('static', filename='images/upload-resume.png') }}"
+            alt="Upload Resume"
+            class="upload-image"
+          />
+        </div>
+
+        <div class="right-section">
+          <h1>Upload Your Resume</h1>
+
+          <p class="upload-text">
+            Upload your resume in PDF format and get ATS score, skill analysis,
+            role prediction and job recommendations.
+          </p>
+
+          <form action="/predict" method="POST" enctype="multipart/form-data">
+            <input type="file" name="resume" accept=".pdf" required />
+
+            <br /><br />
+
+            <button type="submit" class="upload-btn">Analyze Resume</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

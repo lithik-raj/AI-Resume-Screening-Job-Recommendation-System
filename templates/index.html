@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>AI Resume Screening & Job Recommendation System</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Logo -->
+
+      <img
+        src="{{ url_for('static', filename='images/logo.png') }}"
+        alt="AI Resume Screener Logo"
+        class="logo"
+      />
+
+      <br /><br />
+
+      <!-- Hero Banner -->
+
+      <img
+        src="{{ url_for('static', filename='images/hero-banner.jpg') }}"
+        alt="Hero Banner"
+        class="banner"
+      />
+
+      <h1>AI Resume Screening & Job Recommendation System</h1>
+
+      <p class="subtitle">
+        Upload your resume, analyze skills, calculate ATS score and get
+        intelligent job recommendations powered by AI.
+      </p>
+
+      <a href="/upload">
+        <button class="start-btn">Start Analysis</button>
+      </a>
+    </div>
+  </body>
+</html>
